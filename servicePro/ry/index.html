@@ -433,8 +433,8 @@
         
         <!-- row for 서비스 대분류 카테고리 -->
         <div class="row">
-            <div class="col-md-2 col-sm-4 col-xs-6">
-                <div class="box cat0" id="cat0_1">
+            <div class="col-md-2 col-sm-4 col-xs-6" id="block0">
+                <div class="box cat0" id="cat0_0">
                     <div class="icon">
                         <i class="fa fa-calendar"></i>
                         <span class="count mycount">8</span>
@@ -447,8 +447,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-2 col-sm-4 col-xs-6">
-                <div class="box cat0" id="cat0_2">
+            <div class="col-md-2 col-sm-4 col-xs-6" id="block1">
+                <div class="box cat0" id="cat0_1">
                     <div class="icon">
                         <i class="fa fa-calendar"></i>
                         <span class="count mycount">8</span>
@@ -675,7 +675,7 @@
             </section>
             </div>
             <!-- 모바일폼 끝 -->
-            <div class="col-md-2 col-sm-4 col-xs-6">
+            <div class="col-md-2 col-sm-4 col-xs-6" id="block2">
                 <div class="box">
                     <div class="icon">
                         <i class="fa fa-calendar"></i>
@@ -689,7 +689,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-2 col-sm-4 col-xs-6">
+            <div class="col-md-2 col-sm-4 col-xs-6" id="block3">
                 <div class="box">
                     <div class="icon">
                         <i class="fa fa-calendar"></i>
@@ -703,7 +703,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-2 col-sm-4 col-xs-6">
+            <div class="col-md-2 col-sm-4 col-xs-6" id="block4">
                 <div class="box">
                     <div class="icon">
                         <i class="fa fa-calendar"></i>
@@ -717,7 +717,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-2 col-sm-4 col-xs-6">
+            <div class="col-md-2 col-sm-4 col-xs-6" id="block5">
                 <div class="box">
                     <div class="icon">
                         <i class="fa fa-calendar"></i>
@@ -731,225 +731,23 @@
                     </div>
                 </div>
             </div>
-            <!-- 웹폼 시작-->
-            <div class="col-md-12 col-sm-12 col-xs-12 divWform" id="divWform_cat0_1" style="display:none;">
-            	<section class="widget wform">
-                <header>
-                    <h4>
-                        <i class="fa fa-check-square-o"></i>
-                        Dead simple validation
-                        <small>No JS needed to tune-up</small>
-                    </h4>
-                </header>
-                <div class="body">
-                    <form class="form-horizontal label-left" method="post" data-validate="parsley" novalidate="novalidate">
-                        <fieldset>
-                            <legend class="section">
-                                By default validation is started only after at least 3 characters have been input.
-                            </legend>
-                            <div class="row"><div class="col-sm-8">
-                                <div class="control-group">
-                                    <label class="control-label" for="basic">Simple required</label>
-                                    <div class="controls form-group">
-                                        <input type="text" id="basic1" name="basic1" class="form-control parsley-validated parsley-error" required="required"><ul id="parsley-9708698303438723" class="parsley-error-list" style="display: block;"><li class="required" style="display: list-item;">This value is required.</li></ul>
-                                    </div>
-                                </div>
-                                <div class="control-group">
-                                    <label class="control-label" for="basic-change">
-                                        Min-length On Change
-                                    <span class="help-block">
-                                        At least 10
-                                    </span>
-                                    </label>
-                                    <div class="controls form-group">
-                                        <input type="text" id="basic-change" name="basic-change" class="form-control parsley-validated parsley-error" data-trigger="change" data-minlength="10" required="required"><ul id="parsley-9645789398346096" class="parsley-error-list" style="display: block;"><li class="minlength" style="display: list-item;">This value is too short. It should have 10 characters or more.</li><li class="required" style="display: list-item;">This value is required.</li></ul>
-                                    </div>
-                                </div>
-                            </div></div>
-                        </fieldset>
-                        <fieldset>
-                            <legend class="section">
-                                <span class="label label-important">
-                                    HTML5
-                                </span>
-                                input types supported
-                            </legend>
-                            <div class="row"><div class="col-sm-8">
-                                <div class="control-group">
-                                    <label class="control-label" for="email">
-                                        E-mail
-                                    </label>
-                                    <div class="controls form-group">
-                                        <input type="email" id="email" name="email" class="form-control parsley-validated parsley-error" data-trigger="change" data-validation-minlength="1" required="required"><ul id="parsley-6037591625936329" class="parsley-error-list" style="display: block;"><li class="required" style="display: list-item;">This value is required.</li><li class="type" style="display: list-item;">This value should be a valid email.</li></ul>
-                                    <span class="help-block">
-                                        This one is triggered even when 1 character has been input
-                                    </span>
-                                    </div>
-                                </div>
-                                <div class="control-group">
-                                    <label class="control-label" for="number">
-                                        Number
-                                    </label>
-                                    <div class="controls form-group">
-                                        <input type="number" id="number" name="number" class="form-control parsley-validated parsley-success" required="required">
-                                    </div>
-                                </div>
-                                <div class="control-group">
-                                    <label class="control-label" for="range">
-                                        Range
-                                    </label>
-                                    <div class="controls form-group">
-                                        <input type="text" data-range="[10, 100]" class="form-control parsley-validated parsley-error" id="range" name="range" data-trigger="change" data-validation-minlength="1" required="required"><ul id="parsley-8214627939742059" class="parsley-error-list" style="display: block;"><li class="range" style="display: list-item;">This value should be between 10 and 100.</li></ul>
-                                    </div>
-                                </div>
-                            </div></div>
-                        </fieldset>
-                        <fieldset>
-                            <legend class="section">
-                                More validation
-                            </legend>
-                            <div class="row"><div class="col-sm-8">
-                                <div class="control-group">
-                                    <label class="control-label" for="password">
-                                        Password helpers
-                                    </label>
-                                    <div class="controls form-group">
-                                        <input type="password" id="password" name="password" class="form-control parsley-validated parsley-error" data-trigger="change" data-minlength="6" required="required"><ul id="parsley-9632227313704789" class="parsley-error-list" style="display: block;"><li class="minlength" style="display: list-item;">This value is too short. It should have 6 characters or more.</li><li class="required" style="display: list-item;">This value is required.</li></ul>
-                                    </div>
-                                    <div class="controls form-group">
-                                        <input type="password" id="password-r" name="password-r" class="form-control parsley-validated parsley-error" data-trigger="change" data-minlength="6" data-equalto="#password" required="required"><ul id="parsley-6771302716806531" class="parsley-error-list" style="display: block;"><li class="minlength" style="display: list-item;">This value is too short. It should have 6 characters or more.</li><li class="required" style="display: list-item;">This value is required.</li></ul>
-                                    </div>
-                                </div>
-                                <div class="control-group">
-                                    <label class="control-label" for="website">
-                                        Website
-                                    </label>
-                                    <div class="controls form-group">
-                                        <input type="text" id="website" name="website" class="form-control parsley-validated parsley-error" data-trigger="change" data-type="url" required="required"><ul id="parsley-670879429904744" class="parsley-error-list" style="display: block;"><li class="type" style="display: list-item;">This value should be a valid url.</li><li class="required" style="display: list-item;">This value is required.</li></ul>
-                                    </div>
-                                </div>
-                            </div></div>
-                        </fieldset>
-                        <div class="form-actions">
-                            <button type="submit" class="btn btn-danger">Validate &amp; Submit</button>
-                            <button type="button" class="btn btn-default">Cancel</button>
-                        </div>
-                    </form>
-                </div>
-            </section>
-        	</div>
-        	<div class="col-md-12 col-sm-12 col-xs-12 divWform" id="divWform_cat0_2" style="display:none;">
-            	<section class="widget wform">
-                <header>
-                    <h4>
-                        <i class="fa fa-check-square-o"></i>
-                        Dead simple validation
-                        <small>No JS needed to tune-up</small>
-                    </h4>
-                </header>
-                <div class="body">
-                    <form class="form-horizontal label-left" method="post" data-validate="parsley" novalidate="novalidate">
-                        <fieldset>
-                            <legend class="section">
-                                By default validation is started only after at least 3 characters have been input.
-                            </legend>
-                            <div class="row"><div class="col-sm-8">
-                                <div class="control-group">
-                                    <label class="control-label" for="basic">Simple required</label>
-                                    <div class="controls form-group">
-                                        <input type="text" id="basic2" name="basic2" class="form-control parsley-validated parsley-error" required="required"><ul id="parsley-9708698303438723" class="parsley-error-list" style="display: block;"><li class="required" style="display: list-item;">This value is required.</li></ul>
-                                    </div>
-                                </div>
-                                <div class="control-group">
-                                    <label class="control-label" for="basic-change">
-                                        Min-length On Change
-                                    <span class="help-block">
-                                        At least 10
-                                    </span>
-                                    </label>
-                                    <div class="controls form-group">
-                                        <input type="text" id="basic-change" name="basic-change" class="form-control parsley-validated parsley-error" data-trigger="change" data-minlength="10" required="required"><ul id="parsley-9645789398346096" class="parsley-error-list" style="display: block;"><li class="minlength" style="display: list-item;">This value is too short. It should have 10 characters or more.</li><li class="required" style="display: list-item;">This value is required.</li></ul>
-                                    </div>
-                                </div>
-                            </div></div>
-                        </fieldset>
-                        <fieldset>
-                            <legend class="section">
-                                <span class="label label-important">
-                                    HTML5
-                                </span>
-                                input types supported
-                            </legend>
-                            <div class="row"><div class="col-sm-8">
-                                <div class="control-group">
-                                    <label class="control-label" for="email">
-                                        E-mail
-                                    </label>
-                                    <div class="controls form-group">
-                                        <input type="email" id="email" name="email" class="form-control parsley-validated parsley-error" data-trigger="change" data-validation-minlength="1" required="required"><ul id="parsley-6037591625936329" class="parsley-error-list" style="display: block;"><li class="required" style="display: list-item;">This value is required.</li><li class="type" style="display: list-item;">This value should be a valid email.</li></ul>
-                                    <span class="help-block">
-                                        This one is triggered even when 1 character has been input
-                                    </span>
-                                    </div>
-                                </div>
-                                <div class="control-group">
-                                    <label class="control-label" for="number">
-                                        Number
-                                    </label>
-                                    <div class="controls form-group">
-                                        <input type="number" id="number" name="number" class="form-control parsley-validated parsley-success" required="required">
-                                    </div>
-                                </div>
-                                <div class="control-group">
-                                    <label class="control-label" for="range">
-                                        Range
-                                    </label>
-                                    <div class="controls form-group">
-                                        <input type="text" data-range="[10, 100]" class="form-control parsley-validated parsley-error" id="range" name="range" data-trigger="change" data-validation-minlength="1" required="required"><ul id="parsley-8214627939742059" class="parsley-error-list" style="display: block;"><li class="range" style="display: list-item;">This value should be between 10 and 100.</li></ul>
-                                    </div>
-                                </div>
-                            </div></div>
-                        </fieldset>
-                        <fieldset>
-                            <legend class="section">
-                                More validation
-                            </legend>
-                            <div class="row"><div class="col-sm-8">
-                                <div class="control-group">
-                                    <label class="control-label" for="password">
-                                        Password helpers
-                                    </label>
-                                    <div class="controls form-group">
-                                        <input type="password" id="password" name="password" class="form-control parsley-validated parsley-error" data-trigger="change" data-minlength="6" required="required"><ul id="parsley-9632227313704789" class="parsley-error-list" style="display: block;"><li class="minlength" style="display: list-item;">This value is too short. It should have 6 characters or more.</li><li class="required" style="display: list-item;">This value is required.</li></ul>
-                                    </div>
-                                    <div class="controls form-group">
-                                        <input type="password" id="password-r" name="password-r" class="form-control parsley-validated parsley-error" data-trigger="change" data-minlength="6" data-equalto="#password" required="required"><ul id="parsley-6771302716806531" class="parsley-error-list" style="display: block;"><li class="minlength" style="display: list-item;">This value is too short. It should have 6 characters or more.</li><li class="required" style="display: list-item;">This value is required.</li></ul>
-                                    </div>
-                                </div>
-                                <div class="control-group">
-                                    <label class="control-label" for="website">
-                                        Website
-                                    </label>
-                                    <div class="controls form-group">
-                                        <input type="text" id="website" name="website" class="form-control parsley-validated parsley-error" data-trigger="change" data-type="url" required="required"><ul id="parsley-670879429904744" class="parsley-error-list" style="display: block;"><li class="type" style="display: list-item;">This value should be a valid url.</li><li class="required" style="display: list-item;">This value is required.</li></ul>
-                                    </div>
-                                </div>
-                            </div></div>
-                        </fieldset>
-                        <div class="form-actions">
-                            <button type="submit" class="btn btn-danger">Validate &amp; Submit</button>
-                            <button type="button" class="btn btn-default">Cancel</button>
-                        </div>
-                    </form>
-                </div>
-            </section>
-        	</div>
-            <!-- 웹폼 끝 -->
+            
         </div>
         <!-- end row for 서비스 대분류 카테고리 -->
 
     </div>
 </div>
+
+
+
+
+<!-- form ex -->
+<div class="col-md-12 col-sm-12 col-xs-12 divWform" id="divWform_cat0_0" style="display:none;">form0 div</div>
+<div class="col-md-12 col-sm-12 col-xs-12 divWform" id="divWform_cat0_1" style="display:none;">form1 div</div>
+<div class="col-md-12 col-sm-12 col-xs-12 divWform" id="divWform_cat0_2" style="display:none;">form2 div</div>
+
+
+
 
 <!-- jquery and friends -->
 <script src="lib/jquery/jquery-2.0.3.min.js"> </script>

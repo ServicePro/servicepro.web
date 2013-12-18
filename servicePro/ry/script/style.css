@@ -1,3 +1,7 @@
+html {
+     overflow-y: -moz-scrollbars-vertical;
+     overflow-y: scroll;
+}
 body {
 	font-family: '맑�? 고딕','Malgun Gothic','NanumBarunGothic','?�눔바른고딕','NanumGothic','?�눔고딕', 'Droid Sans', arial, serif;
 }
