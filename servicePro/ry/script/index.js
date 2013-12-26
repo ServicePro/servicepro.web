@@ -14,52 +14,61 @@ $(document).ready(function(){
 		}else if(wi > 970){
 			rowsize = 6;
 		}
-		$(".divWform").each(function(){
+		$(".divSform").each(function(){
 			var num = $(this).attr("id").split('_');
 			var item_num = num[2];
 			var row = Math.floor(item_num / rowsize) + 1;
-			lastblock = (row*rowsize) - 1;
-			$(this).insertAfter($("#block"+lastblock));
+			var lastblock = (row*rowsize) - 1;
+			$(this).insertAfter($("#cblock"+lastblock));
+		});
+		$(".divSinfo").each(function(){
+			var num = $(this).attr("id").split('_');
+			var item_num = num[2];
+			var row = Math.floor(item_num / rowsize) + 1;
+			var lastblock = (row*rowsize) - 1;
+			$(this).insertAfter($("#sblock"+lastblock));
 		});
 	};
 
 	
-
 $('.cat0').on('click', function(){
-	if (tmpUser.indexOf("iPhone") > 0 || tmpUser.indexOf("iPod") > 0 || tmpUser.indexOf("Android ") > 0 )  {
-		toggleMform(this);
-	}else{
-		toggleWform(this);
-	}
+	toggleSform(this);
 });	
+$('.myservice').on('click', function(){
+	toggleSinfo(this);
+});
+$('.showCompany').on('click', function(){
+	$('#modalBody').html("dsfafdff");
+	//ajax
+});
 
-var toggleMform = function(obj){
+
+var toggleSform = function(obj){
 	//form toggle
 	var formid = $(obj).attr("id");
-	if($('#divMform_' + formid).is( ':visible' )){
-		$('#divMform_' + formid).hide();	
+	if($('#divSform_' + formid).is( ':visible' )){
+		$('#divSform_' + formid).hide();	
 	}else{
-		$(".divMform").each(function() {
+		$(".divSform").each(function() {
 			if($(this).is( ':visible' )){
 				$(this).hide();
 			}
 		});
-		$('#divMform_' + formid).show();	
+		$('#divSform_' + formid).show();	
 	}
 };
-
-var toggleWform = function(obj){
+var toggleSinfo = function(obj){
 	//form toggle
 	var formid = $(obj).attr("id");
-	if($('#divWform_' + formid).is( ':visible' )){
-		$('#divWform_' + formid).hide();	
+	if($('#divSinfo_' + formid).is( ':visible' )){
+		$('#divSinfo_' + formid).hide();	
 	}else{
-		$(".divWform").each(function() {
+		$(".divSinfo").each(function() {
 			if($(this).is( ':visible' )){
 				$(this).hide();
 			}
 		});
-		$('#divWform_' + formid).show();	
+		$('#divSinfo_' + formid).show();	
 	}
 };
 	
